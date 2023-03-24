@@ -1,0 +1,140 @@
+.dice {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.dice.locked {
+  font-weight: bold;
+}
+
+.number {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 150px auto;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+ }
+ 
+ .dice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ .dice:hover {
+  transform: scale(1.1);
+ }
+ 
+ .dice.locked {
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+ }
+ 
+ .roll-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .roll-button:hover {
+  background-color: #666;
+ }
+ 
+ .darken-page {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* CSS for the card */
+.card {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* CSS for the close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* CSS for the rules button */
+.rules-btn {
+  margin-right: 10px;
+}
